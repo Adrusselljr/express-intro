@@ -33,13 +33,13 @@ router.post('/post', function(req,res) {
   res.send('success')
 })
 
-router.get('/api/:category', function(req, res){
+router.get('/api/:category', function(req, res) {
   // console.log(req.params)
   // apiAxios
   res.send(req.params)
 })
 
-router.get('/json/todos/:userid', function(req,res) {
+router.get('/json/todos/:userid', function(req, res) {
 
   const outputFunc = async () => {
     try { 

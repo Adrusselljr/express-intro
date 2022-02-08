@@ -10,12 +10,12 @@ router.get('/hello', function(req,res) {
   res.send('Hello World from users')
 })
 
-router.get('/name/:firstname',function(req,res){
+router.get('/name/:firstname', function(req,res) {
   console.log(req.params);  //  /users/name/Bob -> {firstname: "Bob"} -> req.firstname = "Bob"
   res.send("Check your log")
 })
 
-router.get('/name/:firstname/:lastname/car/:make/:model',function(req,res){
+router.get('/name/:firstname/:lastname/car/:make/:model', function(req,res) {
   console.log(req.params);  //  /users/name/Bob -> {firstname: "Bob"} -> req.firstname = "Bob"
   let carArr = [
     {
